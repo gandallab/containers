@@ -11,5 +11,6 @@ RUN wget -O- https://github.com/lh3/bwa/archive/refs/tags/v0.7.17.tar.gz \
     cp bwa-0.7.17/bwakit/* bwa.kit/ && \
     rm -rf bwa-0.7.17
 
-FROM ubuntu:20.04  
+FROM ubuntu:20.04
+LABEL org.opencontainers.image.source=https://github.com/gandallab/containers
 COPY --from=0 /tmp/bwa.kit /opt/bwa.kit/
