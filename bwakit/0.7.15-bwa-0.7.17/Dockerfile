@@ -13,4 +13,7 @@ RUN wget -O- https://github.com/lh3/bwa/archive/refs/tags/v0.7.17.tar.gz \
 
 FROM ubuntu:20.04
 LABEL org.opencontainers.image.source=https://github.com/gandallab/containers
+RUN apt-get update && \
+    apt-get install -y perl && \
+    rm -rf /var/lib/apt/lists/*
 COPY --from=0 /tmp/bwa.kit /opt/bwa.kit/
