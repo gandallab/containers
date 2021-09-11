@@ -15,6 +15,16 @@ Usage:
 docker pull ghcr.io/gandallab/bwakit:0.7.15-bwa-0.7.17
 ```
 
+### smrttools
+
+SMRT Tools is a collection of command-line tools included with PacBio's [SMRT Link](https://www.pacb.com/support/software-downloads/) software for use with Single Molecule, Real-Time (SMRT) sequencing data.
+
+Usage:
+
+```
+docker pull ghcr.io/gandallab/smrttools:8.0.0
+```
+
 ## Maintaining
 
 ```
